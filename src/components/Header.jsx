@@ -3,9 +3,9 @@ import { Nav, Container } from 'react-bootstrap'
 const Header = () => {
   const date = new Date()
   return (
-    <Nav className='bg-primary p-2 background'>
+    <Nav className=' p-2 bdr-btm'>
       <Container className='d-flex justify-content-between align-items-center'>
-        <h3 className='fw-bold'>Ninja Habits</h3>
+        <h3 className='fw-bold'>Consistency</h3>
         <span>{date.toDateString()}</span>
       </Container>
     </Nav>

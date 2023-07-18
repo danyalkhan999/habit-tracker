@@ -29,11 +29,11 @@ const Overview = () => {
       </Row>
       <ListGroup>
         {habits.map((habit, index) => (
-          <ListGroup.Item key={index} className='gradient mb-1 rounded habit-container'>
+          <ListGroup.Item key={index} className=' mb-1 rounded habit-container' >
             <Row>
               <Col md={2} className='icons'>
                 {' '}
-                <i className='fa-solid fa-feather-pointed me-3'></i>
+                <i class="fa-regular fa-pen-to-square"></i>
               </Col>
               <Col md={8} className='habit-title'>{habit.title}</Col>
               <Col md={1} className='icons'>
@@ -48,11 +48,11 @@ const Overview = () => {
       </ListGroup>
 
       <Row>
-       
+
         <Col className='d-flex justify-content-end'>
           <Button
             type='button'
-            className='bg-primary mt-3 mobile'
+            className='mt-3 mobile'
             onClick={() => setModalShow(true)}>
 
             <i className='fa-solid fa-circle-plus'></i> &nbsp;&nbsp; New Habit
